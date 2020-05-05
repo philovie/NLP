@@ -96,5 +96,6 @@ def pretty_path(path):
                 j = 1
         route = route +('->抵达终点' + path[-1] + '下车')
     return route
+
 path = search('立水桥站','北京西站',station_connection,sort_candidate=min_transfer)
 print(pretty_path(path))
